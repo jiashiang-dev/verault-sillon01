@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#080808" />
+  <meta name="description" content="Credits and accessibility notes for the VÉRAULT Sillon 01 portfolio concept." />
+  <title>Credits & accessibility | VÉRAULT</title>
+  <link rel="stylesheet" href="/editorial-pages.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="site-header__inner shell">
+      <a class="brand" href="/" aria-label="VÉRAULT home">VÉRAULT</a>
+      <nav class="site-nav" aria-label="Secondary navigation">
+        <a href="/">The watch</a>
+        <a href="/dossier.html">Dossier</a>
+        <a href="/case-study.html">Case study</a>
+        <a href="/credits.html" aria-current="page">Credits</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <div class="editorial-hero shell">
+      <p class="eyebrow">VÉRAULT / PORTFOLIO CONCEPT</p>
+      <h1 class="editorial-hero__small-title">Credits &amp;<br />accessibility.</h1>
+      <p class="editorial-hero__lede">A clear account of the sources and behavior behind the Sillon 01 experience.</p>
+      <p class="editorial-hero__note">VÉRAULT and Sillon 01 are fictional. The images visualize a proposed watch; they are not photographs of a manufactured, tested or certified product.</p>
+    </div>
+    <section class="editorial-section editorial-section--paper" aria-labelledby="credits-title">
+      <div class="shell">
+        <div class="section-head"><div><span class="section-index">01 / CREDITS</span><h2 id="credits-title">The work.</h2></div><p class="section-head__text">The product imagery was supplied by the project owner for this portfolio concept. No third-party watch or lifestyle stock photography appears in the launch story.</p></div>
+        <dl class="source-list">
+          <div><dt>Product concept</dt><dd>VÉRAULT — Sillon 01, a fictional contemporary mechanical watch design.</dd></div>
+          <div><dt>Imagery</dt><dd>Ten supplied Sillon 01 concept visualizations, displayed in the launch experience with responsive crops. Original PNG files are retained alongside optimized WebP versions.</dd></div>
+          <div><dt>Interaction</dt><dd>The Hero adapts an existing 21st.dev parallax component. Scroll motion uses GSAP ScrollTrigger; desktop smooth scrolling uses Lenis.</dd></div>
+          <div><dt>Typography</dt><dd>A system sans-serif and system monospace fallback. No unlicensed commercial font file is embedded.</dd></div>
+          <div><dt>Movement reference</dt><dd>The proposed Sellita SW210-1 b specifications are attributed to <a href="https://www.sellita.ch/images/documents/Catalogue2024_ENG.pdf" target="_blank" rel="noopener noreferrer">Sellita’s catalogue</a>. VÉRAULT does not claim to manufacture the movement.</dd></div>
+        </dl>
+      </div>
+    </section>
+    <section class="editorial-section" aria-labelledby="accessibility-title">
+      <div class="shell">
+        <div class="section-head"><div><span class="section-index">02 / ACCESSIBILITY</span><h2 id="accessibility-title">The whole story stays available.</h2></div><p class="section-head__text">Motion adds depth to the imagery, while copy, specifications and navigation remain in normal document flow.</p></div>
+        <dl class="source-list">
+          <div><dt>Reduced motion</dt><dd>When the system preference requests less motion, scroll-linked parallax and desktop smooth scrolling are disabled. Static images preserve the same content and order.</dd></div>
+          <div><dt>Keyboard</dt><dd>The mobile menu, material selector, navigation links and dossier actions are available by keyboard, with visible focus states.</dd></div>
+          <div><dt>Images</dt><dd>Product and lifestyle images have descriptive alternative text. Decorative type layers are hidden from assistive technology.</dd></div>
+          <div><dt>Feedback</dt><dd>If an image, interaction or section is difficult to use, the portfolio owner should be contacted through the portfolio where this concept is presented.</dd></div>
+        </dl>
+        <div class="editorial-hero__links"><a class="text-link" href="/"><span>Return to Sillon 01</span><span aria-hidden="true">↗</span></a></div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="site-footer__inner shell"><div><p class="site-footer__brand">VÉRAULT</p><p class="site-footer__disclosure">A fictional contemporary watch concept created for a design portfolio. No watch is manufactured, certified or available for sale.</p></div><nav class="site-footer__links" aria-label="Footer navigation"><a href="/">The watch</a><a href="/dossier.html">Dossier</a><a href="/case-study.html">Case study</a></nav></div></footer>
+</body>
+</html>

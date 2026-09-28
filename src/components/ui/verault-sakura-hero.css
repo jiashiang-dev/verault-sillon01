@@ -1,0 +1,90 @@
+.verault-sakura-hero {
+  --verault-hero-track-height: 230svh;
+  background: var(--paper);
+  color: var(--text-on-dark);
+}
+
+.verault-sakura-hero [data-sakura-frame] {
+  padding-top: calc(94px + clamp(1.25rem, 4vmin, 2.5rem));
+}
+
+.verault-sakura-hero [data-sakura-card] {
+  background: var(--charcoal);
+  box-shadow: 0 24px 80px rgba(8, 8, 8, .12);
+}
+
+.verault-sakura-hero [data-sakura-scene] {
+  object-fit: cover;
+  object-position: center 47%;
+  background: var(--charcoal);
+}
+
+.verault-sakura-hero [data-sakura-title] {
+  color: var(--text-on-dark);
+}
+
+.verault-sakura-hero [data-sakura-noise] {
+  opacity: .08;
+}
+
+.verault-sakura-hero [data-sakura-fade] {
+  background: linear-gradient(to bottom, transparent 68%, rgba(8, 8, 8, .24));
+}
+
+.verault-sakura-hero [data-sakura-copy] {
+  color: var(--text-on-dark);
+}
+
+.verault-sakura-hero [data-sakura-copy-gradient] {
+  background: linear-gradient(to top, rgba(8, 8, 8, .98), rgba(8, 8, 8, .81) 60%, transparent);
+}
+
+.verault-sakura-hero [data-sakura-copy] h2,
+.verault-sakura-hero [data-sakura-copy] p {
+  color: var(--text-on-dark);
+}
+
+@media (min-width: 1024px) {
+  .verault-sakura-hero [data-sakura-card] {
+    width: 85%;
+    height: 68svh;
+    margin-inline: auto;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+  .verault-sakura-hero { --verault-hero-track-height: 215svh; }
+  .verault-sakura-hero [data-sakura-scene] {
+    object-fit: contain;
+    object-position: center 44%;
+    transform: none;
+  }
+}
+
+@media (max-width: 639px) {
+  .verault-sakura-hero { --verault-hero-track-height: 200svh; }
+  .verault-sakura-hero [data-sakura-frame] {
+    padding: calc(72px + 16px) 16px 16px;
+  }
+  .verault-sakura-hero [data-sakura-card] {
+    background: #c8c2bb;
+  }
+  .verault-sakura-hero [data-sakura-scene] {
+    object-fit: contain;
+    object-position: center 24%;
+    transform: none;
+    background: #c8c2bb;
+  }
+  .verault-sakura-hero [data-sakura-title] {
+    color: var(--text-on-paper);
+  }
+  .verault-sakura-hero [data-sakura-copy-gradient] {
+    background: linear-gradient(to top, rgba(8, 8, 8, .98), rgba(8, 8, 8, .82) 65%, rgba(8, 8, 8, .45));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .verault-sakura-hero { height: 100svh !important; }
+  .verault-sakura-hero [data-sakura-frame] { position: relative !important; height: 100svh !important; }
+  .verault-sakura-hero [data-sakura-panel] { transform: none !important; }
+}
