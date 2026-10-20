@@ -56,17 +56,17 @@ Open the preview URL with `/verault-sillon01/` at the end. Both the main watch e
 
 1. Select the existing `verault-sillon01` repository. If it is not listed, use **File → Add local repository** and select the existing folder `C:\Users\Asus\Documents\GitHub\verault-sillon01`.
 2. Confirm the current branch is `main` and the repository is `jiashiang-dev/verault-sillon01`.
-3. Review the changes, enter a summary such as `Prepare Sillon 01 for GitHub Pages`, and click **Commit to main**.
-4. Click **Push origin**. This pushes the source and runs a build check; it does **not** publish the site.
+3. Review the changes, enter a summary such as `Enable GitHub Pages deployment on main`, and click **Commit to main**.
+4. Click **Push origin**. A push to `main` automatically builds the website, uploads `dist/`, and deploys it to GitHub Pages after the build succeeds.
 
-### Publish only when you choose
+### Automatic publication from main
 
-The workflow `.github/workflows/pages.yml` follows the GT-R build → artifact → GitHub Pages deployment structure, using this project's existing pnpm lockfile. Pushes and pull requests run the build only. Publication requires a manual run on `main`.
+The workflow `.github/workflows/pages.yml` follows the GT-R build → artifact → GitHub Pages deployment structure, using this project's existing pnpm lockfile. Every push to `main` builds and publishes the website automatically. Pull requests run build checks only. Manual runs on `main` can also publish the current commit. Automatic and manual runs share the same branch queue to avoid overlapping deployments.
 
 1. Open https://github.com/jiashiang-dev/verault-sillon01/settings/pages and select **GitHub Actions** under **Build and deployment → Source**. Do not select a branch or `dist/` as a publishing folder.
-2. Open the repository's **Actions** tab and select **Build and publish Sillon 01**.
-3. Select **Run workflow**, choose `main`, and click **Run workflow** when ready to publish.
-4. Wait for the build and deploy jobs to succeed, then open the Pages URL above. Test the mobile menu, chapter links, dossier, case study and credits.
+2. After committing and pushing to `main` in GitHub Desktop, open the repository's **Actions** tab and select the latest **Build and publish Sillon 01** run.
+3. Wait for both the build and deploy jobs to succeed, then open the Pages URL above. Test the mobile menu, chapter links, dossier, case study and credits.
+4. To republish without another commit, optionally select **Run workflow**, choose `main`, and click **Run workflow**.
 
 No remote settings are changed by local preparation. No commit, push, workflow run or deployment is performed for you. This project has no Netlify-specific configuration or service dependency to remove.
 
