@@ -1,3 +1,4 @@
+import { sitePath } from '@/lib/site-path';
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -69,11 +70,11 @@ export function WatchHero() {
         </h1>
         <div className="watch-hero__image-wrap" data-parallax-layer="3">
           <picture>
-            <source media="(max-width: 639px)" type="image/webp" srcSet="/images/verault/sillon01-front-master.webp" />
-            <source media="(max-width: 639px)" srcSet="/images/verault/sillon01-front-master.png" />
-            <source type="image/webp" srcSet="/images/verault/sillon01-hero-3q.webp" />
+            <source media="(max-width: 639px)" type="image/webp" srcSet={sitePath('images/verault/sillon01-front-master.webp')} />
+            <source media="(max-width: 639px)" srcSet={sitePath('images/verault/sillon01-front-master.png')} />
+            <source type="image/webp" srcSet={sitePath('images/verault/sillon01-hero-3q.webp')} />
             <img
-              src="/images/verault/sillon01-hero-3q.png"
+              src={sitePath('images/verault/sillon01-hero-3q.png')}
               width="1536"
               height="1024"
               alt="Sillon 01 mechanical watch concept with graphite dial, steel case and dark leather strap."

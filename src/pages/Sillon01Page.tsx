@@ -1,3 +1,4 @@
+import { sitePath } from '@/lib/site-path';
 import { useEffect, useState } from 'react';
 import Lenis from '@studio-freight/lenis';
 import gsap from 'gsap';
@@ -95,9 +96,9 @@ function SiteHeader() {
       <a className="site-header__brand" href="#top" onClick={() => setMenuOpen(false)} aria-label="Vérault, back to top">VÉRAULT</a>
       <nav className="site-header__nav" id="primary-navigation" aria-label="Primary navigation" data-open={menuOpen}>
         {navigation.map((item) => <a key={item.href} href={item.href} onClick={() => setMenuOpen(false)}>{item.label}</a>)}
-        <a className="site-header__mobile-dossier" href="/dossier.html" onClick={() => setMenuOpen(false)}>View dossier</a>
+        <a className="site-header__mobile-dossier" href={sitePath('dossier.html')} onClick={() => setMenuOpen(false)}>View dossier</a>
       </nav>
-      <a className="site-header__dossier" href="/dossier.html">View dossier <ArrowUpRight size={16} strokeWidth={1.4} aria-hidden="true" /></a>
+      <a className="site-header__dossier" href={sitePath('dossier.html')}>View dossier <ArrowUpRight size={16} strokeWidth={1.4} aria-hidden="true" /></a>
       <button
         className="site-header__menu-button"
         type="button"
@@ -118,9 +119,9 @@ function SiteFooter() {
     <footer className="site-footer">
       <div><span className="site-footer__brand">VÉRAULT</span><p>A fictional contemporary watch concept created for a design portfolio. No watch is manufactured or offered for sale.</p></div>
       <nav className="site-footer__links" aria-label="Footer navigation">
-        <a href="/dossier.html">Technical dossier</a>
-        <a href="/case-study.html">Design case study</a>
-        <a href="/credits.html">Credits &amp; accessibility</a>
+        <a href={sitePath('dossier.html')}>Technical dossier</a>
+        <a href={sitePath('case-study.html')}>Design case study</a>
+        <a href={sitePath('credits.html')}>Credits &amp; accessibility</a>
       </nav>
       <a className="site-footer__top" href="#top">Back to top ↑</a>
     </footer>

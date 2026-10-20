@@ -1,3 +1,4 @@
+import { sitePath } from '@/lib/site-path';
 import SakuraEditorialPoster from '@/components/ui/sakura-editorial-poster';
 
 export default function DefaultDemo() {
@@ -5,7 +6,7 @@ export default function DefaultDemo() {
     <main>
       <SakuraEditorialPoster className="w-full" />
       <footer className="flex flex-wrap items-center justify-between gap-4 bg-[#ece8df] px-6 py-8 text-xs text-[#4a2c32] md:px-10">
-        <a className="underline underline-offset-4" href="/">Return to VÉRAULT</a>
+        <a className="underline underline-offset-4" href={sitePath('')}>Return to VÉRAULT</a>
         <span>
           Photograph by{' '}
           <a

@@ -1,5 +1,6 @@
 "use client";
 
+import { sitePath } from '@/lib/site-path';
 import { useEffect, useRef, useState } from "react";
 
 export type SakuraEditorialKeyword = {
@@ -35,7 +36,7 @@ export type SakuraEditorialPosterProps = {
   className?: string;
 };
 
-const DEFAULT_SCENE = "/images/sakura/blossoms-pascal-debrunner.jpg";
+const DEFAULT_SCENE = sitePath("images/sakura/blossoms-pascal-debrunner.jpg");
 const FONT_LINK_ID = "sakura-editorial-poster-fonts";
 const FONT_HREF =
   "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@300;400;500;600&family=Saira+Extra+Condensed:wght@700;800&display=swap";

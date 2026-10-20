@@ -1,3 +1,4 @@
+import { sitePath } from '@/lib/site-path';
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -85,18 +86,18 @@ function FormSection() {
           </div>
           <div className="story-form__views">
             <figure className="story-form__view story-form__front">
-              <AssetImage src="/images/verault/sillon01-front-master.png" description="Front view of the Sillon 01 watch with a graphite dial and leather strap" width={1024} height={1536} />
+              <AssetImage src={sitePath('images/verault/sillon01-front-master.png')} description="Front view of the Sillon 01 watch with a graphite dial and leather strap" width={1024} height={1536} />
               <figcaption>01 / THE WHOLE FORM</figcaption>
             </figure>
             <figure className="story-form__view story-form__angle">
-              <AssetImage src="/images/verault/sillon01-side-profile.png" description="Side profile of the Sillon 01 steel case, crown, curved lugs and leather strap" width={1536} height={1024} />
+              <AssetImage src={sitePath('images/verault/sillon01-side-profile.png')} description="Side profile of the Sillon 01 steel case, crown, curved lugs and leather strap" width={1536} height={1024} />
               <figcaption>02 / THE CASE IN PROFILE</figcaption>
             </figure>
           </div>
         </div>
       </div>
       <figure className="story-form__detail story-shell">
-        <AssetImage src="/images/verault/sillon01-lug-detail.png" description="Close view of a brushed steel lug, bezel and leather strap junction" width={1536} height={1024} />
+        <AssetImage src={sitePath('images/verault/sillon01-lug-detail.png')} description="Close view of a brushed steel lug, bezel and leather strap junction" width={1536} height={1024} />
         <figcaption><span>DETAIL 01</span><span>One channel on each lug. It ends before the strap gap.</span></figcaption>
       </figure>
     </section>
@@ -114,13 +115,13 @@ function DialSection() {
           <p className="story-dial__technical">THREE CENTRAL HANDS <span>/</span> 60 MINUTE MARKS</p>
         </div>
         <figure className="story-dial__main">
-          <AssetImage src="/images/verault/sillon01-dial-macro.png" description="Close view of the graphite dial, paired index, three hands and minute track" width={1536} height={1024} />
-          <figcaption><span>GRAPHITE DIAL / A CLEAR READING AT A GLANCE</span><a href="/images/verault/sillon01-front-master.png" target="_blank" rel="noopener noreferrer">View full front reference <span aria-hidden="true">↗</span></a></figcaption>
+          <AssetImage src={sitePath('images/verault/sillon01-dial-macro.png')} description="Close view of the graphite dial, paired index, three hands and minute track" width={1536} height={1024} />
+          <figcaption><span>GRAPHITE DIAL / A CLEAR READING AT A GLANCE</span><a href={sitePath('images/verault/sillon01-front-master.png')} target="_blank" rel="noopener noreferrer">View full front reference <span aria-hidden="true">↗</span></a></figcaption>
         </figure>
       </div>
       <figure className="story-shell story-dial__index">
         <div className="story-dial__index-heading"><span>01 / PAIR</span><span>THE TWELVE O'CLOCK MARK</span></div>
-        <AssetImage src="/images/verault/sillon01-front-master.png" className="story-asset--index-crop" description="Closer view of the paired steel batons at twelve o'clock" width={1024} height={1536} />
+        <AssetImage src={sitePath('images/verault/sillon01-front-master.png')} className="story-asset--index-crop" description="Closer view of the paired steel batons at twelve o'clock" width={1024} height={1536} />
         <figcaption>Two equal marks. One quiet point of recognition.</figcaption>
       </figure>
     </section>
@@ -132,7 +133,7 @@ function MovementSection() {
     <section className="story-chapter story-movement" id="movement" aria-labelledby="movement-title">
       <div className="story-shell story-movement__opening">
         <figure className="story-movement__crown">
-          <AssetImage src="/images/verault/sillon01-crown-macro.png" description="Close view of the knurled winding crown and brushed steel case flank" width={1536} height={1024} />
+          <AssetImage src={sitePath('images/verault/sillon01-crown-macro.png')} description="Close view of the knurled winding crown and brushed steel case flank" width={1536} height={1024} />
           <figcaption>THE CROWN / 5.8 MM DESIGN DIAMETER</figcaption>
         </figure>
         <div className="story-movement__copy">
@@ -140,11 +141,11 @@ function MovementSection() {
           <h2 id="movement-title">A daily<br />ritual.</h2>
           <p className="story-chapter__body">A turn of the crown is a small moment of attention. Sillon 01 is designed around a Sellita SW210-1 b manual-wind movement with central seconds.</p>
           <div className="story-movement__facts" aria-label="Proposed movement base specifications"><span>4 HZ</span><span>18 JEWELS</span><span>TYPICAL 45-HOUR RESERVE</span></div>
-          <EditorialLink href="/dossier.html">Read the movement specification</EditorialLink>
+          <EditorialLink href={sitePath('dossier.html')}>Read the movement specification</EditorialLink>
         </div>
       </div>
       <figure className="story-shell story-movement__back">
-        <AssetImage src="/images/verault/sillon01-caseback-movement.png" className="story-asset--caseback-crop" description="Detail of the proposed manual-wind movement visible through the exhibition back" width={1536} height={1024} />
+        <AssetImage src={sitePath('images/verault/sillon01-caseback-movement.png')} className="story-asset--caseback-crop" description="Detail of the proposed manual-wind movement visible through the exhibition back" width={1536} height={1024} />
         <figcaption>THE MOVEMENT / AN OPEN VIEW OF THE MECHANISM</figcaption>
       </figure>
     </section>
@@ -160,7 +161,7 @@ function ProportionSection() {
     <section className="story-chapter story-proportion" id="proportion" aria-labelledby="proportion-title">
       <div className="story-shell story-proportion__grid">
         <figure className="story-proportion__wrist">
-          <AssetImage src="/images/verault/sillon01-wrist-lifestyle.png" description="Sillon 01 on a wrist in warm daylight, showing its compact scale" width={1024} height={1536} />
+          <AssetImage src={sitePath('images/verault/sillon01-wrist-lifestyle.png')} description="Sillon 01 on a wrist in warm daylight, showing its compact scale" width={1024} height={1536} />
           <figcaption>WORN IN DAYLIGHT / A HUMAN SCALE</figcaption>
         </figure>
         <div className="story-proportion__right">
@@ -170,7 +171,7 @@ function ProportionSection() {
             <p className="story-chapter__body">The compact case is designed to sit close to the wrist. Its short lugs and gently curved back give the dimensions a human scale.</p>
           </div>
           <figure className="story-proportion__profile">
-            <AssetImage src="/images/verault/sillon01-side-profile.png" description="Side profile of the steel case, crystal, crown and curved lugs" width={1536} height={1024} />
+            <AssetImage src={sitePath('images/verault/sillon01-side-profile.png')} description="Side profile of the steel case, crystal, crown and curved lugs" width={1536} height={1024} />
             <figcaption>PROFILE / DESIGN DIMENSIONS</figcaption>
           </figure>
           <div className="story-proportion__dimensions" aria-label="Design dimensions"><p><span>38.5 MM</span><span>DIAMETER</span></p><p><span>45.8 MM</span><span>LUG TO LUG</span></p><p><span>9.5 MM</span><span>THICKNESS TARGET</span></p></div>
@@ -185,15 +186,15 @@ function InvitationSection() {
     <section className="story-chapter story-invitation" id="invitation" aria-labelledby="invitation-title">
       <div className="story-shell story-invitation__grid">
         <figure className="story-invitation__portrait">
-          <AssetImage src="/images/verault/sillon01-closing-campaign.png" description="Sillon 01 in a calm studio still life with warm daylight" width={1024} height={1536} />
+          <AssetImage src={sitePath('images/verault/sillon01-closing-campaign.png')} description="Sillon 01 in a calm studio still life with warm daylight" width={1024} height={1536} />
           <figcaption>SILLON 01 / THE COMPLETE FORM</figcaption>
         </figure>
         <div className="story-invitation__copy">
           <ChapterLabel number="07" name="SILLON 01" />
           <h2 id="invitation-title">Keep<br />the hour.</h2>
           <p className="story-chapter__body">The complete Sillon 01 concept, in one place.</p>
-          <EditorialLink href="/dossier.html">View the technical dossier</EditorialLink>
-          <a className="story-invitation__secondary" href="/case-study.html">About this design concept</a>
+          <EditorialLink href={sitePath('dossier.html')}>View the technical dossier</EditorialLink>
+          <a className="story-invitation__secondary" href={sitePath('case-study.html')}>About this design concept</a>
         </div>
       </div>
     </section>

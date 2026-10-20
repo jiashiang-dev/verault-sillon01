@@ -1,3 +1,4 @@
+import { sitePath } from '@/lib/site-path';
 import { SakuraEditorialPoster } from './sakura-editorial-poster';
 import './verault-sakura-hero.css';
 
@@ -23,10 +24,10 @@ export function VeraultSakuraHero() {
       footerCenter="SILLON 01"
       footerRight="01 / 07"
       socialHandle=""
-      sceneSrc="/images/verault/sillon01-hero-3q.png"
-      sceneWebpSrc="/images/verault/sillon01-hero-3q.webp"
-      sceneMobileSrc="/images/verault/sillon01-front-master.png"
-      sceneMobileWebpSrc="/images/verault/sillon01-front-master.webp"
+      sceneSrc={sitePath('images/verault/sillon01-hero-3q.png')}
+      sceneWebpSrc={sitePath('images/verault/sillon01-hero-3q.webp')}
+      sceneMobileSrc={sitePath('images/verault/sillon01-front-master.png')}
+      sceneMobileWebpSrc={sitePath('images/verault/sillon01-front-master.webp')}
       sceneMobileWidth={1024}
       sceneMobileHeight={1536}
       sceneWidth={1536}
